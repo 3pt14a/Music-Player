@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(29,33,35,1) 0%, rgba(48,83,89,1) 40%, rgba(53,121,140,1) 86%, rgba(58,123,143,1) 100%);   
+    bottom: 0;
+    font-family: poppins;
+}
+
+
+/* Profile icon styling */
+.profile-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+#profileIcon {
+    font-size: 13px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.638);
+    background-color: rgba(245, 245, 245, 0.427);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+/* Login form styling */
+.loginbox {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 25%;
+    background: rgb(7,27,44);
+    background: linear-gradient(14deg, rgba(7,27,44,1) 4%, rgba(26,63,75,1) 49%, rgba(53,104,117,1) 93%);    font-family: poppins;
+    width: 735px;
+    height: 490px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.text {
+    color: white;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+h2 {
+    font-size: 28px;
+    justify-content: center;
+    display: flex;
+    margin: 55px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.inputbox input {
+    width: 75%;
+    height: 35px;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    outline: none;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.158);
+    font-family: poppins;
+}
+
+.inputbox input:focus {
+    border-color: rgb(31, 155, 177);
+}
+
+.loginbox button {
+    width: 15%;
+    height: 35px;
+    justify-content: center;
+    font-weight: 550;
+    display: flex;
+    margin: 20px auto;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(40, 97, 112);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginbox button:hover {
+    background: rgba(58,123,143,1);
+    color:  whitesmoke;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 87px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10.5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.forgot {
+    color: white;
+}
+
+.register {
+    color: white;
+}
+
+.option2 {
+    margin: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10.5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle Form Visibility */
+#loginForm.show {
+    display: block;
+}
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 53px;
+}
+
+.box {
+    width: 460px;
+    padding: 15px;
+    margin: 10px;
+    min-height: 50%;
+    border-radius: 10px;
+}
+
+/* LEFT */
+.box1 {
+    width: 433px;
+    height: 43em;
+    background-color: #1d2123a5;
+    box-shadow: 5px 5px 10px #00000033;
+    padding: 24px;
+}
+
+.librarylist {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.item img {
+    margin-right: 10px;
+}
+
+.item p {
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+    text-shadow: 8px 5px 10px #000000f9;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.item:hover p {
+    transform: scale(1.1);
+}
+
+.librarylist img {
+    height: 50px;
+    margin: 10px;
+}
+
+/* CENTER */
+.box2 {
+    background-color: #1d2123a5;
+    box-shadow: 5px 5px 10px #00000033;
+    height: 43em;
+}
+
+.currentplay {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+img {
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000033;
+    margin-bottom: 25px;
+}
+
+#playlist-header {
+    height: 190px;
+    left: 50%;
+    border-radius: 8px;
+}
+
+
+
+#albumdets {
+    font-size: 13px;
+}
+
+#table {
+    color: whitesmoke; 
+    text-align: center; 
+    table-layout: fixed;
+}
+
+#table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#playlisthead {
+    font-size: 15px;
+}
+
+
+#table td {
+    padding: 15px;
+    padding-left: 25px;   
+}
+
+#song-list tr td {
+    font-size: 13.5px;
+}
+
+#main {
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 100% ;
+    padding: 2% 2%;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: #5168704f;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+/* RIGHT */
+.box3 {
+    background-color: #1d2123a5;
+    box-shadow: 5px 5px 10px #00000033;
+    height: 43em;
+}
+
+.player {        
+    height: 39.5em;
+    width: 90% ;
+    padding: 7%;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #5168704f;
+    color: whitesmoke;
+    box-shadow: 5px 5px 10px #00000033;
+
+}
+
+.logo {
+    padding: 120px;
+    border-radius: 8px;
+    background-color: #1d2123;
+    margin-bottom: 27px;
+}
+
+.logo i{
+    font-size: 40px;
+}
+
+.controls{
+    padding: 7%;
+}
+
+.controls button{
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    background-color: #1d212300;
+}
+
+.controls i {
+    font-size: 15px;
+    padding: 15px;
+    color: whitesmoke;
+    border-radius: 50%;
+    background-color: #1d2123cf;
+}
+
+.controls i:hover {
+    background-color: #5168704f;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 0%;
+    padding: 5px;
+}
+
+.time span{
+    font-size: 15px;
+}
+
+.progress-bar {
+    height: 6px;
+    width: 100%;
+    position: relative;
+    background-color: #ddd;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#musicName {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+.content {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.footer {
+    position: fixed;
+    left: auto;
+    bottom: 20px;
+    color: rgba(245, 245, 245, 0.556);
+}

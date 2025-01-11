@@ -26,7 +26,7 @@ const songs = [
     },
     {
         name: 'Wish you well',
-        file: 'music/Wish you well.mp3',
+        file: 'music/Wish You Well.mp3',
         duration: '3:30'
     }
 ];
